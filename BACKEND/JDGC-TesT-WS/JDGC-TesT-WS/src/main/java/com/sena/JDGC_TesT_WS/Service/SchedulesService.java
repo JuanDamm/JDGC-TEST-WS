@@ -33,5 +33,9 @@ public class SchedulesService extends ABaseService<Schedules> implements Schedul
 	    public List<Schedules> encontrarFechaYRuta(Date date, Long departureAirportId, Long arrivalAirportId) {
 	        return repository.encontrarFechaYRuta(date, departureAirportId, arrivalAirportId);
 	    }
+	 
+	 public List<Schedules> encontrarFechasYRuta(Date startDate, Date endDate, Long departureAirportId, Long arrivalAirportId) {
+	        return repository.encontrarFechasYRuta(startDate, endDate, departureAirportId, arrivalAirportId);
+	    }
 
 }

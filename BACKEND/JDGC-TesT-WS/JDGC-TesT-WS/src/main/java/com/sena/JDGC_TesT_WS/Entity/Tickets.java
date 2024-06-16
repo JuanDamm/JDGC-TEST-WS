@@ -17,7 +17,7 @@ public class Tickets extends ABaseEntity{
 	    @Column(name = "lastname", nullable = false)
 	    private String lastname;
 
-	    @Column(name = "email", nullable = false)
+	    @Column(name = "email", nullable = true)
 	    private String email;
 
 	    @Column(name = "phone", nullable = false)
@@ -26,8 +26,8 @@ public class Tickets extends ABaseEntity{
 	    @Column(name = "passport_number", nullable = false)
 	    private String passportNumber;
 	    
-	    /*@Column(name = "passport_country_id", nullable = false)
-	    private Long passportCountryId;*/ //COMENTADO PORQUE NO TENGO IDEA DE CON QUÉ QUE VA ESTO
+	    @Column(name = "passport_country_id", nullable = false)
+	    private Long passportCountryId; //COMENTADO PORQUE NO TENGO IDEA DE CON QUÉ QUE VA ESTO
 
 	    @Column(name = "passport_photo", nullable = false)
 	    private String passportPhoto;

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de la Reserva</title>
+    <link rel="stylesheet" href="../STYLE/stylesForm.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Confirmación de la reserva</h3>
+
+        <div>
+            <h5>Detalles del vuelo de salida</h5>
+            <p>Origen: CAI</p>
+            <p>Destino: AUH</p>
+            <p>Tipo de cabina: Económica</p>
+            <p>Fecha: 11/10/17</p>
+            <p>Número de vuelo: 1908</p>
+        </div>
+
+        <div>
+            <h5>Detalles del vuelo de regreso</h5>
+            <p>Origen: AUH</p>
+            <p>Destino: CAI</p>
+            <p>Tipo de cabina: Económica</p>
+            <p>Fecha: 11/15/17</p>
+            <p>Número de vuelo: 1907</p>
+        </div>
+
+        <hr>
+        <div id="inputData">
+        <form id="pasajero-form">
+            <h5>Datos del pasajero</h5>
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="firstname">
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="lastname">
+            </div>
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="birthDate">
+            </div>
+            <div class="form-group">
+                <label for="numero_pasaporte">Número Pasaporte</label>
+                <input type="text" id="passportNumber">
+            </div>
+            <div class="form-group">
+                <label for="pais_pasaporte">País de pasaporte</label>
+                <select id="pais_pasaporte">
+                    <option value="">Seleccionar país</option>
+                    <!-- Opciones de país -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="foto_pasaporte">Foto Pasaporte</label>
+                <input type="file" id="passportPhoto">
+            </div>
+            <button type="button" class="btn btn-secondary" id="agregar-pasajero">Agregar Pasajero</button>
+        </form>
+    </div>  
+        <hr>        
+        <div id="outputData">
+            <br>
+            <thead>
+            <table class="table table-hover">
+                <tr class="table-dark">
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Número de pasaporte</th>
+                    <th>País de pasaporte</th>
+                    <th>Teléfono</th>
+                    <th>Foto Pasaporte</th>
+                </tr>
+            </thead>
+            <tbody id="resultData">
+                
+            </tbody>
+            </table>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <button type="button" class="btn btn-secondary">Regresar a buscar vuelos</button>
+            <button type="button" class="btn btn-success">Confirmar Reserva</button>
+        </div>
+    </div>
+
+    <script src="../JS/segunda_vista.js"></script>
+</body>
+</html>

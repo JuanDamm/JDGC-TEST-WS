@@ -1,5 +1,7 @@
 package com.sena.JDGC_TesT_WS.IService;
 
-public interface RolesIService {
+import com.sena.JDGC_TesT_WS.Entity.Roles;
+
+public interface RolesIService extends IBaseService<Roles>{
 
 }
